@@ -1,3 +1,5 @@
+package concurrency;
+
 //: concurrency/CloseResource.java
 // Interrupting a blocked task by
 // closing the underlying resource.

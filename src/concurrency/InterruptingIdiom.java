@@ -1,3 +1,5 @@
+package concurrency;
+
 //: concurrency/InterruptingIdiom.java
 // General idiom for interrupting a task.
 // {Args: 1100}
@@ -52,6 +54,7 @@ class Blocked3 implements Runnable {
 
 public class InterruptingIdiom {
   public static void main(String[] args) throws Exception {
+	  args=new String[]{"2100"};
     if(args.length != 1) {
       print("usage: java InterruptingIdiom delay-in-mS");
       System.exit(1);
