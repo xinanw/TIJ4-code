@@ -1,3 +1,5 @@
+package concurrency;
+
 //: concurrency/Philosopher.java
 // A dining philosopher
 import java.util.concurrent.*;
@@ -28,10 +30,10 @@ public class Philosopher implements Runnable {
         print(this + " " + "thinking");
         pause();
         // Philosopher becomes hungry
-        print(this + " " + "grabbing right");
         right.take();
-        print(this + " " + "grabbing left");
+        print(this + " " + "grabbing right");
         left.take();
+        print(this + " " + "grabbing left");
         print(this + " " + "eating");
         pause();
         right.drop();

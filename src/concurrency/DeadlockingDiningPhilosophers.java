@@ -1,3 +1,5 @@
+package concurrency;
+
 //: concurrency/DeadlockingDiningPhilosophers.java
 // Demonstrates how deadlock can be hidden in a program.
 // {Args: 0 5 timeout}
@@ -5,7 +7,7 @@ import java.util.concurrent.*;
 
 public class DeadlockingDiningPhilosophers {
   public static void main(String[] args) throws Exception {
-    int ponder = 5;
+    int ponder = 0;
     if(args.length > 0)
       ponder = Integer.parseInt(args[0]);
     int size = 5;

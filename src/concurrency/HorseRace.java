@@ -1,3 +1,5 @@
+package concurrency;
+
 //: concurrency/HorseRace.java
 // Using CyclicBarriers.
 import java.util.concurrent.*;
@@ -73,7 +75,7 @@ public class HorseRace {
   }
   public static void main(String[] args) {
     int nHorses = 7;
-    int pause = 200;
+    int pause = 10;
     if(args.length > 0) { // Optional argument
       int n = new Integer(args[0]);
       nHorses = n > 0 ? n : nHorses;
